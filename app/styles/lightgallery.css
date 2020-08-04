@@ -360,7 +360,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-thumb-outer {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.7);
       bottom: 0;
       position: absolute;
       width: 100%;
@@ -463,7 +463,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-toogle-thumb {
-      background-color: #373937;
+      background-color: rgba(0, 0, 0, 0.68);
       border-radius: 15px 15px 0 0;
       color: #fff;
       cursor: pointer;
@@ -701,6 +701,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       text-align: center;
       z-index: 1080;
       height: 10px;
+
 }
 
 .lg-outer .lg-pager-outer.lg-pager-hover .lg-pager-cont {
@@ -714,6 +715,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       position: relative;
       vertical-align: top;
       margin: 0 5px;
+      box-shadow: 0 0 10px -2px #000;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
 }
 
 .lg-outer .lg-pager-cont:hover .lg-pager-thumb-cont {
@@ -727,7 +734,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-pager-thumb-cont {
-      background-color: #fff;
+      background-color: rgba(0, 0, 0, 0.4);
       color: #FFF;
       bottom: 100%;
       height: 83px;
@@ -781,6 +788,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       position: absolute;
       vertical-align: middle;
       width: 0;
+      color: rgba(0, 0, 0, 0.4);
 }
 
 .lg-fullscreen:after {
