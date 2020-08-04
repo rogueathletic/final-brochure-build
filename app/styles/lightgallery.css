@@ -1,4 +1,5 @@
-/*! lightgallery - v1.6.14 - 2020-04-21
+/*!
+lightgallery - v1.6.14 - 2020-04-21
 * http://sachinchoolur.github.io/lightGallery/
 * Copyright (c) 2020 Sachin N; Licensed GPLv3 */
 @font-face {
@@ -24,9 +25,10 @@
 
 .lg-actions .lg-next,
 .lg-actions .lg-prev {
-      background-color: rgba(0, 0, 0, 0.45);
-      border-radius: 2px;
-      color: #999;
+      background-color: rgba(255, 255, 255, 0.45);
+      border-radius: 50%;
+      box-shadow: 0 0 15px -7px #000;
+      color: #f26e4b!important;
       cursor: pointer;
       display: block;
       font-size: 22px;
@@ -37,6 +39,41 @@
       z-index: 1080;
       border: none;
       outline: none;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      transition: box-shadow 444ms ease;
+      -webkit-transition: box-shadow 444ms ease;
+      -moz-transition: box-shadow 444ms ease;
+      -ms-transition: box-shadow 444ms ease;
+      -o-transition: box-shadow 444ms ease;
+}
+
+.lg-actions .lg-next:hover,
+.lg-actions .lg-prev:hover {
+       background-color: rgba(255, 255, 255, 1);
+       transition: box-shadow 222ms ease;
+       border-radius: 50%;
+       box-shadow: 0 0 15px -7px #f26e4b;
+       color: #f26e4b!important;
+       -webkit-transition: box-shadow 222ms ease;
+       -moz-transition: box-shadow 222ms ease;
+       -ms-transition: box-shadow 222ms ease;
+       -o-transition: box-shadow 222ms ease;
+}
+
+.lg-actions .lg-next:active,
+.lg-actions .lg-prev:active {
+       background-color: rgba(255, 255, 255, 1);
+       transition: box-shadow 111ms ease;
+       border-radius: 50%;
+       box-shadow: 0 0  #000;
+       color: #f26e4b!important;
+       -webkit-transition: box-shadow 111ms ease;
+       -moz-transition: box-shadow 111ms ease;
+       -ms-transition: box-shadow 111ms ease;
+       -o-transition: box-shadow 111ms ease;
 }
 
 .lg-actions .lg-next.disabled,
@@ -231,6 +268,7 @@
       content: "\e0f2";
 }
 
+/* not shown ignore but leave for now */
 .lg-sub-html {
       background-color: rgba(0, 0, 0, 0);
       bottom: 0;
@@ -317,7 +355,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-thumb-outer {
-      background-color: #323432;
+      background-color: #373937;
       bottom: 0;
       position: absolute;
       width: 100%;
@@ -420,7 +458,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-toogle-thumb {
-      background-color: #0D0A0A;
+      background-color: #373937;
       border-radius: 15px 15px 0 0;
       color: #fff;
       cursor: pointer;
@@ -782,7 +820,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-dropdown {
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: transparent;
+      position: absolute;
       border-radius: 2px;
       font-size: 14px;
       list-style-type: none;
@@ -807,7 +846,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       -ms-border-radius: 2px;
       -o-border-radius: 2px;
 }
-
+/* 
 @media (min-width: 768px) {
       .lg-outer .lg-dropdown {
             display: flex;
@@ -815,7 +854,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
             justify-content: space-evenly;
             width: 740px;
       }
-}
+} */
 
 @media (max-width: 767px) {
       .lg-outer .lg-dropdown {
@@ -830,7 +869,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       width: 0;
       position: absolute;
       border: 8px solid transparent;
-      border-bottom-color: #fff;
+      border-bottom-color: transparent;
       right: 16px;
       top: -16px;
 }
@@ -845,7 +884,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-dropdown a {
-      color: #333;
+      color: #fff;
       display: block;
       white-space: pre;
       padding: 4px 12px;
@@ -854,9 +893,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-dropdown a:hover {
-      background-color: #f26e4b;
-      color: #ffffff !important;
+      color:#fff!important;
+      position: relative;
 }
+
+
+
+
 
 .lg-outer .lg-dropdown .lg-dropdown-text {
       display: inline-block;
@@ -1091,7 +1134,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       right: 0;
       bottom: 0;
       z-index: 1040;
-      background-color: #000;
+      background-color: #fff;
       opacity: 0;
       -webkit-transition: opacity 0.15s ease 0s;
       -o-transition: opacity 0.15s ease 0s;

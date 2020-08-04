@@ -27,7 +27,7 @@
                   useLeft: !1,
                   closable: !0,
                   loop: !0,
-                  escKey: !0,
+                  escKey: !1,
                   keyPress: !0,
                   controls: !0,
                   slideEndAnimatoin: !0,
@@ -984,11 +984,11 @@ function (a, b) {
                         b.core.$outer.removeClass("lg-dropdown-active")
                   }), b.core.$el.on("onAfterSlide.lg.tm", function (c, d, e) {
                         setTimeout(function () {
-                              a("#lg-jump-caldera-difference").attr("href", "/index.html#lg=1&slide=3"), 
-                              a("#lg-jump-perfect-fit").attr("href", "index.html#lg=1&slide=11"),
-                              a("#lg-jump-detailed-specifications").attr("href", "index.html#lg=1&slide=18"),
-                              a("#lg-jump-essentials-and-accessories").attr("href", "index.html#lg=1&slide=19"),
-                              a("#lg-jump-warranty").attr("href", "index.html#lg=1&slide=25")
+                              a("#lg-jump-caldera-difference").attr("href", "#lg=1&slide=3"), 
+                              a("#lg-jump-perfect-fit").attr("href", "#lg=1&slide=11"),
+                              a("#lg-jump-detailed-specifications").attr("href", "#lg=1&slide=18"),
+                              a("#lg-jump-essentials-and-accessories").attr("href", "#lg=1&slide=19"),
+                              a("#lg-jump-warranty").attr("href", "#lg=1&slide=25")
                         }, 100)
                   })
             }, c.prototype.getSahreProps = function (a, b) {
