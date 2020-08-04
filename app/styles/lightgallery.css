@@ -10,6 +10,15 @@ lightgallery - v1.6.14 - 2020-04-21
       font-style: normal;
 }
 
+* {
+      --brand-primary-color:#f26e4b;                     /* var(--brand-primary-color) */
+      --brochure-white: #ffffff;                         /* var(--brochure-white) */
+      --brochure-black: #000000;                         /* var(--brochure-black) */
+      --seventy-percent-black: rgba(0, 0, 0, 0.7);       /* var(--seventy-percent-black) */
+      --fourty-percent-black: var(--fourty-percent-black); /* var(--fourty-percent-black) */
+      --trans-color: transparent;
+}
+
 .lg-icon {
       font-family: 'lg';
       /* speak: none; */
@@ -25,10 +34,10 @@ lightgallery - v1.6.14 - 2020-04-21
 
 .lg-actions .lg-next,
 .lg-actions .lg-prev {
-      background-color: rgba(255, 255, 255, 0.45);
+      background-color: var(--fourty-percent-black);
       border-radius: 50%;
-      box-shadow: 0 0 15px -7px #000;
-      color: #f26e4b!important;
+      box-shadow: 0 0 15px -7px var(--brochure-black);
+      color: var(--brand-primary-color)!important;
       cursor: pointer;
       display: block;
       font-size: 22px;
@@ -52,11 +61,11 @@ lightgallery - v1.6.14 - 2020-04-21
 
 .lg-actions .lg-next:hover,
 .lg-actions .lg-prev:hover {
-       background-color: rgba(255, 255, 255, 1);
+       background-color: var(--brochure-white);
        transition: box-shadow 222ms ease;
        border-radius: 50%;
-       box-shadow: 0 0 15px -7px #f26e4b;
-       color: #f26e4b!important;
+       box-shadow: 0 0 15px -7px var(--brand-primary-color);
+       color: var(--brand-primary-color)!important;
        -webkit-transition: box-shadow 222ms ease;
        -moz-transition: box-shadow 222ms ease;
        -ms-transition: box-shadow 222ms ease;
@@ -65,11 +74,11 @@ lightgallery - v1.6.14 - 2020-04-21
 
 .lg-actions .lg-next:active,
 .lg-actions .lg-prev:active {
-       background-color: rgba(255, 255, 255, 1);
+       background-color: var(--brochure-white);
        transition: box-shadow 111ms ease;
        border-radius: 50%;
-       box-shadow: 0 0  #000;
-       color: #f26e4b!important;
+       box-shadow: 0 0 var(--brochure-black);
+       color: var(--brand-primary-color)!important;
        -webkit-transition: box-shadow 111ms ease;
        -moz-transition: box-shadow 111ms ease;
        -ms-transition: box-shadow 111ms ease;
@@ -84,7 +93,7 @@ lightgallery - v1.6.14 - 2020-04-21
 
 .lg-actions .lg-next:hover,
 .lg-actions .lg-prev:hover {
-      color: #FFF;
+      color: var(--brochure-white);
 }
 
 .lg-actions .lg-next {
@@ -240,11 +249,11 @@ lightgallery - v1.6.14 - 2020-04-21
       position: absolute;
       top: 0;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.45);
+      background-color: var(--fourty-percent-black);
 }
 
 .lg-toolbar .lg-icon {
-      color: #fff;
+      color: var(--brochure-white);
       cursor: pointer;
       float: right;
       font-size: 24px;
@@ -261,7 +270,7 @@ lightgallery - v1.6.14 - 2020-04-21
 }
 
 .lg-toolbar .lg-icon:hover {
-      color: #f26e4b;
+      color: var(--brand-primary-color);
 }
 
 .lg-toolbar .lg-close:after {
@@ -275,9 +284,9 @@ lightgallery - v1.6.14 - 2020-04-21
 
 /* not shown ignore but leave for now */
 .lg-sub-html {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--trans-color);
       bottom: 0;
-      color: #EEE;
+      color: var(--brochure-white);
       font-size: 16px;
       left: 0;
       padding: 10px 40px;
@@ -299,7 +308,7 @@ lightgallery - v1.6.14 - 2020-04-21
 }
 
 #lg-counter {
-      color: #fff;
+      color: var(--brochure-white);
       display: inline-block;
       font-size: 16px;
       padding: 12px 20px 0 20px;
@@ -308,7 +317,7 @@ lightgallery - v1.6.14 - 2020-04-21
 
 #lg-counter:hover,
 #lg-counter:active {
-      color: #f26e4b;
+      color: var(--brand-primary-color);
 }
 
 .lg-toolbar,
@@ -360,7 +369,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-thumb-outer {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: var(--seventy-percent-black);
       bottom: 0;
       position: absolute;
       width: 100%;
@@ -412,7 +421,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       float: left;
       overflow: hidden;
       height: 100%;
-      border: 2px solid #FFF;
+      border: 2px solid var(--brochure-white);
       border-radius: 0;
       margin-bottom: 5px;
       -webkit-border-radius: 0;
@@ -434,7 +443,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-outer .lg-thumb-item.active,
 .lg-outer .lg-thumb-item:hover {
-      border-color: #f26e4b;
+      border-color: var(--brand-primary-color);
       padding: 5px;
 }
 
@@ -463,9 +472,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-toogle-thumb {
-      background-color: rgba(0, 0, 0, 0.68);
+      background-color: var(--seventy-percent-black);
       border-radius: 15px 15px 0 0;
-      color: #fff;
+      color: var(--brochure-white);
       cursor: pointer;
       font-size: 16px;
       font-variant: small-caps;
@@ -490,7 +499,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-toogle-thumb:hover {
-      color: #FFF;
+      color: var(--brand-primary-color);
 }
 
 .lg-outer .lg-video-cont {
@@ -587,7 +596,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-progress-bar {
-      background-color: #333;
+      background-color: var(--seventy-percent-black);
       height: 5px;
       left: 0;
       position: absolute;
@@ -602,7 +611,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-progress-bar .lg-progress {
-      background-color: #f26e4b;
+      background-color: var(--brand-primary-color);
       height: 5px;
       width: 0;
 }
@@ -734,8 +743,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-pager-thumb-cont {
-      background-color: rgba(0, 0, 0, 0.4);
-      color: #FFF;
+      background-color: var(--fourty-percent-black);
+      color: var(--brochure-white);
       bottom: 100%;
       height: 83px;
       left: 0;
@@ -760,9 +769,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-pager {
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: var(--fourty-percent-black);
       border-radius: 50%;
-      box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.7) inset;
+      box-shadow: 0 0 0 8px var(--seventy-percent-black) inset;
       display: block;
       height: 12px;
       -webkit-transition: box-shadow 0.3s ease 0s;
@@ -773,7 +782,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-outer .lg-pager:hover,
 .lg-outer .lg-pager:focus {
-      box-shadow: 0 0 0 8px #fff inset;
+      box-shadow: 0 0 0 8px var(--brochure-white) inset;
 }
 
 .lg-outer .lg-caret {
@@ -788,7 +797,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       position: absolute;
       vertical-align: middle;
       width: 0;
-      color: rgba(0, 0, 0, 0.4);
+      color: var(--fourty-percent-black);
 }
 
 .lg-fullscreen:after {
@@ -800,7 +809,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer #lg-dropdown-overlay {
-      background-color: rgba(0, 0, 0, 0.55);
+      background-color: var(--fourty-percent-black);
       bottom: 0;
       cursor: default;
       left: 0;
@@ -829,7 +838,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer.lg-dropdown-active #lg-share {
-      color: #f26e4b;
+      color: var(--brand-primary-color);
 }
 
 .lg-outer .lg-dropdown {
@@ -893,11 +902,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-outer .lg-dropdown>li:hover a,
 .lg-outer .lg-dropdown>li:hover .lg-icon {
-      color: #333;
+      color: var(--seventy-percent-black);
 }
 
 .lg-outer .lg-dropdown a {
-      color: #fff;
+      color: var(--brochure-white);
       display: block;
       white-space: pre;
       padding: 4px 12px;
@@ -906,7 +915,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-dropdown a:hover {
-      color:#fff!important;
+      color: var(--brochure-white)!important;
       position: relative;
 }
 
@@ -923,7 +932,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 /* sets menu dropdown icon positioning */
 .lg-outer .lg-dropdown .lg-icon {
-      color: #333;
+      color: var(--seventy-percent-black);
       display: inline-block;
       float: none;
       font-size: 20px;
@@ -1147,7 +1156,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       right: 0;
       bottom: 0;
       z-index: 1040;
-      background-color: #fff;
+      background-color: var(--brochure-white);
       opacity: 0;
       -webkit-transition: opacity 0.15s ease 0s;
       -o-transition: opacity 0.15s ease 0s;
