@@ -891,8 +891,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       height: 0;
       width: 0;
       position: absolute;
-      border: 8px solid transparent;
-      border-bottom-color: transparent;
+      border: none;
+      border-bottom-color: none;
       right: 15px;
       top: 16px;
 }
@@ -919,7 +919,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       font-size: 12px;
 }
 
-.lg-outer .lg-dropdown a:hover {
+.lg-outer .lg-dropdown a:hover,
+.lg-outer .lg-dropdown a:active  {
       color: var(--brand-primary-color)!important;
       background-color: var(--seventy-percent-white);
       border-radius: 50px;
