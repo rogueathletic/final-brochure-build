@@ -2,6 +2,28 @@
 lightgallery - v1.6.14 - 2020-04-21
 * http://sachinchoolur.github.io/lightGallery/
 * Copyright (c) 2020 Sachin N; Licensed GPLv3 */
+
+/*  TODO:  */
+ 
+
+:root {
+      --brand-primary-color: #099ca6;
+      /* var(--brand-primary-color) */
+      --brochure-white: #ffffff;
+      /* var(--brochure-white) */
+      --brochure-black: #000000;
+      /* var(--brochure-black) */
+      --ninety-percent-white: #00000090;
+      /* var(--ninety-percent-white) */
+      --seventy-percent-black: #00000070;
+      /* var(--seventy-percent-black) */
+      --fourty-percent-black: #00000040;
+      /* var(--fourty-percent-black) */
+      --seventy-percent-white: rgba(255, 255, 255, 0.7);
+      /* var(--seventy-percent-white) */
+      --trans-color: transparent;
+}
+
 @font-face {
       font-family: 'lg';
       src: url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.14/fonts/lg.eot?n1z373");
@@ -10,14 +32,60 @@ lightgallery - v1.6.14 - 2020-04-21
       font-style: normal;
 }
 
-* {
-      --brand-primary-color:#f26e4b;                     /* var(--brand-primary-color) */
-      --brochure-white: #ffffff;                         /* var(--brochure-white) */
-      --brochure-black: #000000;                         /* var(--brochure-black) */
-      --seventy-percent-black: rgba(0, 0, 0, 0.7);       /* var(--seventy-percent-black) */
-      --fourty-percent-black: rgba(0, 0, 0, 0.4);        /* var(--fourty-percent-black) */
-      --seventy-percent-white: rgba(255, 255, 255, 0.7);       /* var(--seventy-percent-white) */
-      --trans-color: transparent;
+
+
+@media screen and (prefers-reduced-transparency: reduce) and (prefers-contrast: high) and (prefers-contrast: forced) and (-ms-high-contrast: active) {
+
+      /* replaces all colors with transparency with solid colors  only colors changed added */
+      * {
+            --seventy-percent-black: rgba(0, 0, 0, 1);
+            /* var(--seventy-percent-black) */
+            --fourty-percent-black: rgba(0, 0, 0, 1);
+            /* var(--fourty-percent-black) */
+            --seventy-percent-white: rgba(255, 255, 255, 1);
+            /* var(--seventy-percent-white) */
+      }
+}
+
+@media screen and (-ms-high-contrast: black-on-white) {
+
+      /* Replaces #f26e4b; for black  and converts all transparency to solid colors only colors with changes added */
+      * {
+            --brand-primary-color: #000000;
+            /* var(--brand-primary-color) */
+            --brochure-white: #ffffff;
+            /* var(--brochure-white) */
+            --brochure-black: #000000;
+            /* var(--brochure-black) */
+            --seventy-percent-black: rgba(0, 0, 0, 1);
+            /* var(--seventy-percent-black) */
+            --fourty-percent-black: rgba(0, 0, 0, 1);
+            /* var(--fourty-percent-black) */
+            --seventy-percent-white: rgba(255, 255, 255, 1);
+            /* var(--seventy-percent-white) */
+            --trans-color: transparent;
+      }
+}
+
+@media (prefers-reduced-motion: reduce) {
+      * {
+            transition: 0s !important;
+            transition-duration: 0s !important;
+            animation-duration: 0s !important;
+            scroll-behavior: auto !important;
+      }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+      .lg-outer {
+            background-color: #00000090;
+      }
+}
+
+@media screen and (prefers-color-scheme: light) {
+      .lg-outer {
+            background-color: var(--brochure-white);
+      }
 }
 
 .lg-icon {
@@ -38,7 +106,7 @@ lightgallery - v1.6.14 - 2020-04-21
       background-color: var(--seventy-percent-white);
       border-radius: 50%;
       box-shadow: 0 0 15px -7px var(--brochure-black);
-      color: var(--brand-primary-color)!important;
+      color: var(--brand-primary-color) !important;
       cursor: pointer;
       display: block;
       font-size: 22px;
@@ -62,28 +130,28 @@ lightgallery - v1.6.14 - 2020-04-21
 
 .lg-actions .lg-next:hover,
 .lg-actions .lg-prev:hover {
-       background-color: var(--brochure-white);
-       transition: box-shadow 222ms ease;
-       border-radius: 50%;
-       box-shadow: 0 0 15px -7px var(--brand-primary-color);
-       color: var(--brand-primary-color)!important;
-       -webkit-transition: box-shadow 222ms ease;
-       -moz-transition: box-shadow 222ms ease;
-       -ms-transition: box-shadow 222ms ease;
-       -o-transition: box-shadow 222ms ease;
+      background-color: var(--brochure-white);
+      transition: box-shadow 222ms ease;
+      border-radius: 50%;
+      box-shadow: 0 0 15px -7px var(--brand-primary-color);
+      color: var(--brand-primary-color) !important;
+      -webkit-transition: box-shadow 222ms ease;
+      -moz-transition: box-shadow 222ms ease;
+      -ms-transition: box-shadow 222ms ease;
+      -o-transition: box-shadow 222ms ease;
 }
 
 .lg-actions .lg-next:active,
 .lg-actions .lg-prev:active {
-       background-color: var(--brochure-white);
-       transition: box-shadow 111ms ease;
-       border-radius: 50%;
-       box-shadow: 0 0 var(--brochure-black);
-       color: var(--brand-primary-color)!important;
-       -webkit-transition: box-shadow 111ms ease;
-       -moz-transition: box-shadow 111ms ease;
-       -ms-transition: box-shadow 111ms ease;
-       -o-transition: box-shadow 111ms ease;
+      background-color: var(--brochure-white);
+      transition: box-shadow 111ms ease;
+      border-radius: 50%;
+      box-shadow: 0 0 var(--brochure-black);
+      color: var(--brand-primary-color) !important;
+      -webkit-transition: box-shadow 111ms ease;
+      -moz-transition: box-shadow 111ms ease;
+      -ms-transition: box-shadow 111ms ease;
+      -o-transition: box-shadow 111ms ease;
 }
 
 .lg-actions .lg-next.disabled,
@@ -703,6 +771,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       pointer-events: auto;
 }
 
+
+
+
+
 .lg-outer .lg-pager-outer {
       bottom: 20px;
       left: 0;
@@ -725,7 +797,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       position: relative;
       vertical-align: top;
       margin: 0 5px;
-      box-shadow: 0 0 10px -2px var(--brochure-black);
+      box-shadow: 0 0 10px -4px var(--brochure-black);
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -770,7 +842,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-pager {
-      background-color: var(--fourty-percent-black);
+      background-color: var(--seventy-percent-white);
       border-radius: 50%;
       box-shadow: 0 0 0 1px var(-brochure-white) inset;
       display: block;
@@ -869,6 +941,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       -ms-border-radius: 2px;
       -o-border-radius: 2px;
 }
+
 /* 
 @media (min-width: 768px) {
       .lg-outer .lg-dropdown {
@@ -920,8 +993,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-dropdown a:hover,
-.lg-outer .lg-dropdown a:active  {
-      color: var(--brand-primary-color)!important;
+.lg-outer .lg-dropdown a:active {
+      color: var(--brand-primary-color) !important;
       background-color: var(--seventy-percent-white);
       border-radius: 50px;
       position: relative;

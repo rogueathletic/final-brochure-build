@@ -1,6 +1,14 @@
 /*! lightgallery - v1.6.14 - 2020-04-21
  * http://sachinchoolur.github.io/lightGallery/
  * Copyright (c) 2020 Sachin N; Licensed GPLv3 */
+
+/*
+ TODO:
+ - 
+ -  
+ - 
+*/
+
 ! function (a, b) {
       "function" == typeof define && define.amd ? define(["jquery"], function (a) {
             return b(a)
