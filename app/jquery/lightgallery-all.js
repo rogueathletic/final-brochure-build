@@ -23,9 +23,9 @@
                   addClass: "",
                   startClass: "lg-start-zoom",
                   backdropDuration: 150,
-                  hideBarsDelay: 2200,
+                  hideBarsDelay: 2222,
                   useLeft: !1,
-                  closable: !0,
+                  closable: !1,
                   loop: !0,
                   escKey: !1,
                   keyPress: !0,
@@ -33,7 +33,7 @@
                   slideEndAnimatoin: !0,
                   hideControlOnEnd: !1,
                   mousewheel: !0,
-                  getCaptionFromTitleOrAlt: !0,
+                  getCaptionFromTitleOrAlt: !1,
                   appendSubHtmlTo: ".lg-sub-html",
                   subHtmlSelectorRelative: !1,
                   preload: 1,
@@ -44,7 +44,7 @@
                   prevHtml: "",
                   index: !1,
                   iframeMaxWidth: "100%",
-                  download: !0,
+                  download: !1,
                   counter: !0,
                   appendCounterTo: ".lg-toolbar",
                   swipeThreshold: 50,
@@ -52,7 +52,13 @@
                   enableDrag: !0,
                   dynamic: !1,
                   dynamicEl: [],
-                  galleryId: 1
+                  hash: !0,
+                  galleryId: 1,
+                  pager: !0,
+                  toggleThumb: !1,
+                  animateThumb: !0,
+                  enableThumbSwipe: !0,
+                  showThumbByDefault: !1
             };
             b.prototype.init = function () {
                   var b = this;
@@ -90,7 +96,7 @@
                         f = "",
                         g = this;
                   for (a("body").append('<div class="lg-backdrop"></div>'), a(".lg-backdrop").css("transition-duration", this.s.backdropDuration + "ms"), e = 0; e < this.$items.length; e++) c += '<div class="lg-item"></div>';
-                  if (this.s.controls && this.$items.length > 1 && (d = '<div class="lg-actions"><button class="lg-prev lg-icon">' + this.s.prevHtml + '</button><button class="lg-next lg-icon">' + this.s.nextHtml + "</button></div>"), ".lg-sub-html" === this.s.appendSubHtmlTo && (f = '<div class="lg-sub-html"></div>'), b = '<div class="lg-outer ' + this.s.addClass + " " + this.s.startClass + '"><div class="lg" style="width:' + this.s.width + "; height:" + this.s.height + '"><div class="lg-inner">' + c + '</div><div class="lg-toolbar lg-group"><a href="https://calderaspas.com/caldera-brochure/" download><span class="lg-pdf lg-icon"></span></a></div>' + d + f + "</div></div>", a("body").append(b), this.$outer = a(".lg-outer"), this.$slide = this.$outer.find(".lg-item"), this.s.useLeft ? (this.$outer.addClass("lg-use-left"), this.s.mode = "lg-slide") : this.$outer.addClass("lg-use-css3"), g.setTop(), a(window).on("resize.lg orientationchange.lg", function () {
+                  if (this.s.controls && this.$items.length > 1 && (d = '<div class="lg-actions"><button title="View Previous Page" class="lg-prev lg-icon">' + this.s.prevHtml + '</button><button title="View Next Page" class="lg-next lg-icon">' + this.s.nextHtml + "</button></div>"), ".lg-sub-html" === this.s.appendSubHtmlTo && (f = '<div class="lg-sub-html"></div>'), b = '<div class="lg-outer ' + this.s.addClass + " " + this.s.startClass + '"><div class="lg" style="width:' + this.s.width + "; height:" + this.s.height + '"><div class="lg-inner">' + c + '</div><div class="lg-toolbar lg-group"><a href="https://calderaspas.com/caldera-brochure/" download><span class="lg-pdf lg-icon"></span></a></div>' + d + f + "</div></div>", a("body").append(b), this.$outer = a(".lg-outer"), this.$slide = this.$outer.find(".lg-item"), this.s.useLeft ? (this.$outer.addClass("lg-use-left"), this.s.mode = "lg-slide") : this.$outer.addClass("lg-use-css3"), g.setTop(), a(window).on("resize.lg orientationchange.lg", function () {
                               setTimeout(function () {
                                     g.setTop()
                               }, 100)
@@ -245,7 +251,9 @@
                   a && b.$slide.length < 3 && (c = !1), b.lgBusy || (b.index > 0 ? (b.index--, b.$el.trigger("onBeforePrevSlide.lg", [b.index, a]), b.slide(b.index, a, !1, "prev")) : c ? (b.index = b.$items.length - 1, b.$el.trigger("onBeforePrevSlide.lg", [b.index, a]), b.slide(b.index, a, !1, "prev")) : b.s.slideEndAnimatoin && !a && (b.$outer.addClass("lg-left-end"), setTimeout(function () {
                         b.$outer.removeClass("lg-left-end")
                   }, 400)))
-            }, b.prototype.keyPress = function () {
+            },
+            // thumbnail function open close below
+            b.prototype.keyPress = function () {
                   var b = this;
                   this.$items.length > 1 && a(window).on("keyup.lg", function (a) {
                         b.$items.length > 1 && (37 === a.keyCode && (a.preventDefault(), b.goToPrevSlide()), 39 === a.keyCode && (a.preventDefault(), b.goToNextSlide()))

@@ -15,7 +15,8 @@ lightgallery - v1.6.14 - 2020-04-21
       --brochure-white: #ffffff;                         /* var(--brochure-white) */
       --brochure-black: #000000;                         /* var(--brochure-black) */
       --seventy-percent-black: rgba(0, 0, 0, 0.7);       /* var(--seventy-percent-black) */
-      --fourty-percent-black: var(--fourty-percent-black); /* var(--fourty-percent-black) */
+      --fourty-percent-black: rgba(0, 0, 0, 0.4);        /* var(--fourty-percent-black) */
+      --seventy-percent-white: rgba(255, 255, 255, 0.7);       /* var(--seventy-percent-white) */
       --trans-color: transparent;
 }
 
@@ -34,7 +35,7 @@ lightgallery - v1.6.14 - 2020-04-21
 
 .lg-actions .lg-next,
 .lg-actions .lg-prev {
-      background-color: var(--fourty-percent-black);
+      background-color: var(--seventy-percent-white);
       border-radius: 50%;
       box-shadow: 0 0 15px -7px var(--brochure-black);
       color: var(--brand-primary-color)!important;
@@ -724,7 +725,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       position: relative;
       vertical-align: top;
       margin: 0 5px;
-      box-shadow: 0 0 10px -2px #000;
+      box-shadow: 0 0 10px -2px var(--brochure-black);
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -739,7 +740,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-pager-cont.lg-pager-active .lg-pager {
-      box-shadow: 0 0 0 2px #fff inset;
+      box-shadow: 0 0 0 2px var(--brochure-white) inset;
 }
 
 .lg-outer .lg-pager-thumb-cont {
@@ -771,7 +772,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer .lg-pager {
       background-color: var(--fourty-percent-black);
       border-radius: 50%;
-      box-shadow: 0 0 0 8px var(--seventy-percent-black) inset;
+      box-shadow: 0 0 0 1px var(-brochure-white) inset;
       display: block;
       height: 12px;
       -webkit-transition: box-shadow 0.3s ease 0s;
@@ -782,7 +783,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-outer .lg-pager:hover,
 .lg-outer .lg-pager:focus {
-      box-shadow: 0 0 0 8px var(--brochure-white) inset;
+      box-shadow: 0 0 0 8px var(--brand-primary-color) inset;
 }
 
 .lg-outer .lg-caret {
@@ -792,8 +793,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       bottom: -10px;
       display: inline-block;
       height: 0;
-      left: 50%;
-      margin-left: -5px;
+      left: 45%;
+      margin: inherit -5px;
       position: absolute;
       vertical-align: middle;
       width: 0;
@@ -878,11 +879,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       }
 } */
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
       .lg-outer .lg-dropdown {
             position: absolute;
       }
-}
+} */
 
 .lg-outer .lg-dropdown:after {
       content: "";
@@ -892,8 +893,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       position: absolute;
       border: 8px solid transparent;
       border-bottom-color: transparent;
-      right: 16px;
-      top: -16px;
+      right: 15px;
+      top: 16px;
+}
+
+#lg-jump-caldera-difference {
+      margin-top: 5px;
 }
 
 .lg-outer .lg-dropdown>li:last-child {
@@ -915,8 +920,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-dropdown a:hover {
-      color: var(--brochure-white)!important;
+      color: var(--brand-primary-color)!important;
+      background-color: var(--seventy-percent-white);
+      border-radius: 50px;
       position: relative;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
 }
 
 
