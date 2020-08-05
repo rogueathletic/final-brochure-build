@@ -7,7 +7,7 @@ lightgallery - v1.6.14 - 2020-04-21
  
 
 :root {
-      --brand-primary-color: #099ca6;
+      --brand-primary-color: #f57b56;
       /* var(--brand-primary-color) */
       --brochure-white: #ffffff;
       /* var(--brochure-white) */
@@ -30,62 +30,6 @@ lightgallery - v1.6.14 - 2020-04-21
       src: url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.14/fonts/lg.eot?#iefixn1z373") format("embedded-opentype"), url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.14/fonts/lg.woff?n1z373") format("woff"), url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.14/fonts/lg.ttf?n1z373") format("truetype"), url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.14/fonts/lg.svg?n1z373#lg") format("svg");
       font-weight: normal;
       font-style: normal;
-}
-
-
-
-@media screen and (prefers-reduced-transparency: reduce) and (prefers-contrast: high) and (prefers-contrast: forced) and (-ms-high-contrast: active) {
-
-      /* replaces all colors with transparency with solid colors  only colors changed added */
-      * {
-            --seventy-percent-black: rgba(0, 0, 0, 1);
-            /* var(--seventy-percent-black) */
-            --fourty-percent-black: rgba(0, 0, 0, 1);
-            /* var(--fourty-percent-black) */
-            --seventy-percent-white: rgba(255, 255, 255, 1);
-            /* var(--seventy-percent-white) */
-      }
-}
-
-@media screen and (-ms-high-contrast: black-on-white) {
-
-      /* Replaces #f26e4b; for black  and converts all transparency to solid colors only colors with changes added */
-      * {
-            --brand-primary-color: #000000;
-            /* var(--brand-primary-color) */
-            --brochure-white: #ffffff;
-            /* var(--brochure-white) */
-            --brochure-black: #000000;
-            /* var(--brochure-black) */
-            --seventy-percent-black: rgba(0, 0, 0, 1);
-            /* var(--seventy-percent-black) */
-            --fourty-percent-black: rgba(0, 0, 0, 1);
-            /* var(--fourty-percent-black) */
-            --seventy-percent-white: rgba(255, 255, 255, 1);
-            /* var(--seventy-percent-white) */
-            --trans-color: transparent;
-      }
-}
-
-@media (prefers-reduced-motion: reduce) {
-      * {
-            transition: 0s !important;
-            transition-duration: 0s !important;
-            animation-duration: 0s !important;
-            scroll-behavior: auto !important;
-      }
-}
-
-@media screen and (prefers-color-scheme: dark) {
-      .lg-outer {
-            background-color: #00000090;
-      }
-}
-
-@media screen and (prefers-color-scheme: light) {
-      .lg-outer {
-            background-color: var(--brochure-white);
-      }
 }
 
 .lg-icon {
@@ -500,16 +444,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       box-shadow: 2px 2px 15px -10px #999, -1px -1px 25px -10px #999;
 }
 
-@media (min-width: 1025px) {
-      .lg-outer .lg-thumb-item {
-            -webkit-transition: border-color 0.25s ease;
-            -o-transition: border-color 0.25s ease;
-            transition: border-color 0.25s ease;
-            -moz-transition: border-color 0.25s ease;
-            -ms-transition: border-color 0.25s ease;
-      }
-}
-
 .lg-outer .lg-thumb-item.active,
 .lg-outer .lg-thumb-item:hover {
       border-color: var(--brand-primary-color);
@@ -771,10 +705,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       pointer-events: auto;
 }
 
-
-
-
-
 .lg-outer .lg-pager-outer {
       bottom: 20px;
       left: 0;
@@ -783,7 +713,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       text-align: center;
       z-index: 1080;
       height: 10px;
-
+      display: block;
 }
 
 .lg-outer .lg-pager-outer.lg-pager-hover .lg-pager-cont {
@@ -1345,4 +1275,80 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       -moz-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
       -o-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
       transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+}
+
+
+@media screen and (prefers-reduced-transparency: reduce) and (prefers-contrast: high) and (prefers-contrast: forced) and (-ms-high-contrast: active) {
+
+      /* replaces all colors with transparency with solid colors  only colors changed added */
+      * {
+            --seventy-percent-black: rgba(0, 0, 0, 1);
+            /* var(--seventy-percent-black) */
+            --fourty-percent-black: rgba(0, 0, 0, 1);
+            /* var(--fourty-percent-black) */
+            --seventy-percent-white: rgba(255, 255, 255, 1);
+            /* var(--seventy-percent-white) */
+      }
+}
+
+@media screen and (-ms-high-contrast: black-on-white) {
+
+      /* Replaces #f26e4b; for black  and converts all transparency to solid colors only colors with changes added */
+      * {
+            --brand-primary-color: #000000;
+            /* var(--brand-primary-color) */
+            --brochure-white: #ffffff;
+            /* var(--brochure-white) */
+            --brochure-black: #000000;
+            /* var(--brochure-black) */
+            --seventy-percent-black: rgba(0, 0, 0, 1);
+            /* var(--seventy-percent-black) */
+            --fourty-percent-black: rgba(0, 0, 0, 1);
+            /* var(--fourty-percent-black) */
+            --seventy-percent-white: rgba(255, 255, 255, 1);
+            /* var(--seventy-percent-white) */
+            --trans-color: transparent;
+      }
+}
+
+@media (prefers-reduced-motion: reduce) {
+      * {
+            transition: 0s !important;
+            transition-duration: 0s !important;
+            animation-duration: 0s !important;
+            scroll-behavior: auto !important;
+      }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+      .lg-outer {
+            background-color: #00000090;
+      }
+}
+
+@media screen and (prefers-color-scheme: light) {
+      .lg-outer {
+            background-color: var(--brochure-white);
+      }
+}
+
+@media (min-width: 1025px) {
+      .lg-outer .lg-thumb-item {
+            -webkit-transition: border-color 0.25s ease;
+            -o-transition: border-color 0.25s ease;
+            transition: border-color 0.25s ease;
+            -moz-transition: border-color 0.25s ease;
+            -ms-transition: border-color 0.25s ease;
+      }
+}
+
+@media screen and (max-width: 1366px) and (hover: none) {
+      .lg-fullscreen,
+      #lg-actual-size,
+      .lg-outer .lg-pager-outer {
+            display: none;
+            }
+            #lg-counter {
+                  padding: 13px 0px 0 15px;
+            }
 }
