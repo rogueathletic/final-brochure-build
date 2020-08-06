@@ -4,7 +4,7 @@ lightgallery - v1.6.14 - 2020-04-21
 * Copyright (c) 2020 Sachin N; Licensed GPLv3 */
 
 /*  TODO:  */
- 
+
 
 :root {
       --brand-primary-color: #f57b56;
@@ -1337,7 +1337,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 @media only screen and (prefers-color-scheme: light) and (prefers-color-scheme: dark) {
       .lg-outer {
-            background-color: var(--brochure-white)!important;
+            background-color: var(--brochure-white) !important;
       }
 }
 
@@ -1358,12 +1358,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 } */
 
 @media only screen and (max-width: 1366px) and (hover: none) {
+
       .lg-autoplay-button,
       #lg-actual-size,
       .lg-outer .lg-pager-outer {
             display: none;
-            }
-            #lg-counter {
-                  padding: 13px 0px 0 15px;
-            }
+      }
+
+      #lg-counter {
+            padding: 13px 0px 0 15px;
+      }
+}
+
+@media (max-width: 800px) {
+
+      .lg-autoplay-button,
+      #lg-actual-size,
+      .lg-outer .lg-pager-outer {
+            display: none !important;
+      }
+
+      #lg-counter {
+            padding: 13px 0px 0 15px;
+      }
 }
