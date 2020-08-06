@@ -1,244 +1,221 @@
+
+
 body {
-      background-color: #fff;
+  background-color: var(--brochure-white);
+  padding: 0;
+  margin: 0;
+}
 
-    }
-    
-    .small {
-      font-size: 11px;
-      color: #999;
-      display: block;
-      margin-top: -10px;
-    }
-    
-    .cont {
-      text-align: center;
-    }
-    
-    .page-head {
-      padding: 60px 0;
-      text-align: center;
-    }
-    
-    .page-head .lead {
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 1.4;
-      margin-bottom: 50px;
-      margin-top: 0;
-    }
+.small {
+  font-size: 11px;
 
-    
-    
-    .caldera-gallery>ul {
-      margin-bottom: 0;
-      padding-left: 15px;
-      display: none;
-    }
-    
-    .caldera-gallery>ul>li {
-      margin-bottom: 15px;
-      width: 180px;
-      display: inline-block;
-      margin-right: 15px;
-      list-style: outside none none;
-    }
-    
-    .caldera-gallery>ul>li a {
-      border: 2px solid #FFF;
-      padding: 5px;
-      border-radius: 0px;
-      display: block;
-      overflow: hidden;
-      position: relative;
-      float: left;
-    }
-    
-    .caldera-gallery>ul>li a>img {
-      -webkit-transition: -webkit-transform 0.15s ease 0s;
-      -moz-transition: -moz-transform 0.15s ease 0s;
-      -o-transition: -o-transform 0.15s ease 0s;
-      transition: transform 0.15s ease 0s;
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-      height: 100%;
-      width: 100%;
-    }
-    
-    .caldera-gallery>ul>li a:hover>img {
-      -webkit-transform: scale3d(1.1, 1.1, 1.1);
-      transform: scale3d(1.1, 1.1, 1.1);
-    }
-    
-    .caldera-gallery>ul>li a:hover .caldera-gallery-poster>img {
-      opacity: 1;
-    }
-    
-    .caldera-gallery>ul>li a .caldera-gallery-poster {
-      background-color: rgba(0, 0, 0, 0.1);
-      bottom: 0;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      -webkit-transition: background-color 0.15s ease 0s;
-      -o-transition: background-color 0.15s ease 0s;
-      transition: background-color 0.15s ease 0s;
-    }
-    
-    .caldera-gallery>ul>li a .demo-gallery-poster>img {
-      left: 50%;
-      margin-left: -10px;
-      margin-top: -10px;
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      -webkit-transition: opacity 0.3s ease 0s;
-      -o-transition: opacity 0.3s ease 0s;
-      transition: opacity 0.3s ease 0s;
-    }
-    
-    .demo-gallery>ul>li a:hover .demo-gallery-poster {
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    
-    .demo-gallery .justified-gallery>a>img {
-      -webkit-transition: -webkit-transform 0.15s ease 0s;
-      -moz-transition: -moz-transform 0.15s ease 0s;
-      -o-transition: -o-transform 0.15s ease 0s;
-      transition: transform 0.15s ease 0s;
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-      height: 100%;
-      width: 100%;
-    }
-    
-    .demo-gallery .justified-gallery>a:hover>img {
-      -webkit-transform: scale3d(1.1, 1.1, 1.1);
-      transform: scale3d(1.1, 1.1, 1.1);
-    }
-    
-    .demo-gallery .justified-gallery>a:hover .demo-gallery-poster>img {
-      opacity: 1;
-    }
-    
-    .demo-gallery .justified-gallery>a .demo-gallery-poster {
-      background-color: rgba(0, 0, 0, 0.1);
-      bottom: 0;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      -webkit-transition: background-color 0.15s ease 0s;
-      -o-transition: background-color 0.15s ease 0s;
-      transition: background-color 0.15s ease 0s;
-    }
-    
-    .demo-gallery .justified-gallery>a .demo-gallery-poster>img {
-      left: 50%;
-      margin-left: -10px;
-      margin-top: -10px;
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      -webkit-transition: opacity 0.3s ease 0s;
-      -o-transition: opacity 0.3s ease 0s;
-      transition: opacity 0.3s ease 0s;
-    }
-    
-    .demo-gallery .justified-gallery>a:hover .demo-gallery-poster {
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    
-    .demo-gallery .video .demo-gallery-poster img {
-      height: 48px;
-      margin-left: -24px;
-      margin-top: -24px;
-      opacity: 0.8;
-      width: 48px;
-    }
-    
-    .demo-gallery.dark>ul>li a {
-      border: 3px solid #04070a;
-    }
-    
+  color: var(--fourty-percent-black) ;
+  display: block;
+  margin-top: -10px;
+}
+
+.cont {
+  text-align: center;
+}
+
+.page-head {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-head .lead {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
 
 
 
-    /* test menu toggle */
+.caldera-gallery>ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  position: relative;
+  height: 100vh
+}
+
+.caldera-gallery>ul>li {
+  margin-bottom: 15px;
+  /* width: 180px;  <-- Default size if all pages displayed */
+  display: inline-block;
+  margin-right: 15px;
+  list-style: outside none none;
+}
+
+.caldera-gallery > ul > li:nth-of-type(n + 2) {
+  display: none;
+  width: 100%;
+}
+
+.caldera-gallery > ul > li:nth-of-type(1) > p,
+.caldera-gallery > ul > li:nth-of-type(1) > img,
+.caldera-gallery > ul > li:nth-of-type(1) > .caldera-brochure-download-link {
+  clear: both;
+}
+
+.caldera-gallery > ul > li:nth-of-type(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
 
 
-    
-    .brochure-nav {
-      margin: 0;
-      padding: 0;
-    }
-    
-    .wrapper {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .wrapper>li {
-      display: block;
-      float: left;
-      padding: 0;
-      position: relative;
-      text-decoration: none;
-      transition-duration: 0.5s;
-    }
-    
-    .wrapper > li a {
-      color: #555;
-      line-height: 1.6em;
-    }
-    
-    .wrapper>li:hover,
-    .wrapper>li:focus-within {
-      cursor: pointer;
-      width: 100%;
-      max-width: 100%;
-    }
-    
-    .wrapper>li:focus-within a {
-      outline: none;
-    }
-    
-    .brochure-menu {
-          /* min-width: 100vw; */
-          max-width: 100%;
-    }
-    
-    .wrapper li .brochure-menu {
-      background: rgba(0, 0, 0, 0.2);
-      visibility: hidden;
-      opacity: 0;
-        transition: opacity 8000ms ease;
-      min-width: 5rem;
-      /* 	position: absolute; */
-      display: flex;
-      flex-direction: row;
-    
-      transition: all 0.5s ease;
-      margin-top: 1rem;
-      left: 0;
-      display: none;
-    }
-    
-    .wrapper li:hover>.brochure-menu,
-    .wrapper li:focus-within>.brochure-menu,
-    .wrapper li .brochure-menu:hover,
-    .wrapper li .brochure-menu:hover,
-    .wrapper li .brochure-menu:hover,
-    .wrapper li ul:focus {
-      visibility: visible;
-      opacity: 1;
-      display: flex;
-      justify-content: space-around;
-    }
-    
-    .wrapper li .brochure-menu li {
-          list-style-type: none;
-      width: 100%;
-    }
-    
+
+.caldera-gallery > ul > li:nth-of-type(1) > p {
+  text-align: left;
+  font-family: museosans-300, sans-serif;
+  font-size: 1em;
+  padding: 0;
+  margin: 0 5px 0 5px;
+  color: var(--ninety-percent-black);
+}
+
+.caldera-gallery > ul > li:nth-of-type(1) a.caldera-brochure-download-link  {
+  padding: 0;
+  margin: 0 5px 0 0;
+  float: right;
+  text-decoration: none;
+  font-family: museosans-300, sans-serif;
+  font-size: 1em;
+  color: var(--ninety-percent-black);
+  
+  }
+  
+  .caldera-gallery > ul > li:nth-of-type(1) a.caldera-brochure-download-link:after{
+  content: "\e0f2";
+  font-family: lg;
+  font-size: 0.8em;
+  position: relative;
+  left: 2px;
+  bottom: 4px;
+  }
+
+.caldera-gallery > ul > li a {
+  border: 2px solid var(--brochure-white);
+  padding: 0px;
+  border-radius: 0px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  float: left;
+
+}
+
+.caldera-gallery>ul>li a>img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  height: 100%;
+  width: 100%;
+}
+
+.caldera-gallery>ul>li a:hover>img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.caldera-gallery>ul>li a:hover .caldera-gallery-poster>img {
+  opacity: 1;
+}
+
+.caldera-gallery>ul>li a .caldera-gallery-poster {
+  background-color: var(--fourty-percent-black);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+
+.caldera-gallery>ul>li a .demo-gallery-poster>img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
+.demo-gallery>ul>li a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.demo-gallery .justified-gallery>a>img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  height: 100%;
+  width: 100%;
+}
+
+.demo-gallery .justified-gallery>a:hover>img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.demo-gallery .justified-gallery>a:hover .demo-gallery-poster>img {
+  opacity: 1;
+}
+
+.demo-gallery .justified-gallery>a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+
+.demo-gallery .justified-gallery>a .demo-gallery-poster>img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
+.demo-gallery .justified-gallery>a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.demo-gallery .video .demo-gallery-poster img {
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  opacity: 0.8;
+  width: 48px;
+}
+
+.demo-gallery.dark>ul>li a {
+  border: 3px solid var(--ninety-percent-black);
+}

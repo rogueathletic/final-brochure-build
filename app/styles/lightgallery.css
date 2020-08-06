@@ -447,10 +447,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       box-shadow: 2px 2px 15px -10px #999, -1px -1px 25px -10px #999;
 }
 
-.lg-outer .lg-thumb-item:not(:focus):active,
+
+.lg-outer .lg-thumb-item .active,
 .lg-outer .lg-thumb-item:hover {
-      border-color: var(--brand-primary-color);
-      padding: 5px;
+      border-color: var(--brand-primary-color)!important;
+      padding: 3px;
+}
+
+.lg-outer .lg-thumb-item .active {
+      border-color: var(--brand-primary-color)!important;
 }
 
 .lg-outer .lg-thumb-item img {
