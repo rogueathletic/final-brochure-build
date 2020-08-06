@@ -331,6 +331,7 @@ lightgallery - v1.6.14 - 2020-04-21
 #lg-counter:hover,
 #lg-counter:active {
       color: var(--brand-primary-color);
+      cursor: default;
 }
 
 .lg-toolbar,

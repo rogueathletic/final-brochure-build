@@ -104,7 +104,7 @@
                         f = "",
                         g = this;
                   for (a("body").append('<div class="lg-backdrop"></div>'), a(".lg-backdrop").css("transition-duration", this.s.backdropDuration + "ms"), e = 0; e < this.$items.length; e++) c += '<div class="lg-item"></div>';
-                  if (this.s.controls && this.$items.length > 1 && (d = '<div class="lg-actions"><button title="View Previous Page" class="lg-prev lg-icon">' + this.s.prevHtml + '</button><button title="View Next Page" class="lg-next lg-icon">' + this.s.nextHtml + "</button></div>"), ".lg-sub-html" === this.s.appendSubHtmlTo && (f = '<div class="lg-sub-html"></div>'), b = '<div class="lg-outer ' + this.s.addClass + " " + this.s.startClass + '"><div class="lg" style="width:' + this.s.width + "; height:" + this.s.height + '"><div class="lg-inner">' + c + '</div><div class="lg-toolbar lg-group"><a href="https://calderaspas.com/caldera-brochure/" target="_blank" download><span class="lg-pdf lg-icon"></span></a></div>' + d + f + "</div></div>", a("body").append(b), this.$outer = a(".lg-outer"), this.$slide = this.$outer.find(".lg-item"), this.s.useLeft ? (this.$outer.addClass("lg-use-left"), this.s.mode = "lg-slide") : this.$outer.addClass("lg-use-css3"), g.setTop(), a(window).on("resize.lg orientationchange.lg", function () {
+                  if (this.s.controls && this.$items.length > 1 && (d = '<div class="lg-actions"><button title="View Previous Page" class="lg-prev lg-icon">' + this.s.prevHtml + '</button><button title="View Next Page" class="lg-next lg-icon">' + this.s.nextHtml + "</button></div>"), ".lg-sub-html" === this.s.appendSubHtmlTo && (f = '<div class="lg-sub-html"></div>'), b = '<div class="lg-outer ' + this.s.addClass + " " + this.s.startClass + '"><div class="lg" style="width:' + this.s.width + "; height:" + this.s.height + '"><div class="lg-inner">' + c + '</div><div class="lg-toolbar lg-group"><a  href="https://calderaspas.com/caldera-brochure/" target="_blank" download><span class="lg-pdf lg-icon" title="Click to Download"></span></a></div>' + d + f + "</div></div>", a("body").append(b), this.$outer = a(".lg-outer"), this.$slide = this.$outer.find(".lg-item"), this.s.useLeft ? (this.$outer.addClass("lg-use-left"), this.s.mode = "lg-slide") : this.$outer.addClass("lg-use-css3"), g.setTop(), a(window).on("resize.lg orientationchange.lg", function () {
                               setTimeout(function () {
                                     g.setTop()
                               }, 100)
@@ -151,7 +151,7 @@
                         vk: g
                   } : void 0
             }, b.prototype.counter = function () {
-                  this.s.counter && a(this.s.appendCounterTo).append('<div id="lg-counter"><span id="lg-counter-current">' + (parseInt(this.index, 10) + 1) + '</span> / <span id="lg-counter-all">' + this.$items.length + "</span></div>")
+                  this.s.counter && a(this.s.appendCounterTo).append('<div id="lg-counter"><span title="Current Page Number" id="lg-counter-current">' + (parseInt(this.index, 10) + 1) + '</span> / <span title="Total number of pages" id="lg-counter-all">' + this.$items.length + "</span></div>")
             }, b.prototype.addHtml = function (b) {
                   var c, d, e = null;
                   if (this.s.dynamic ? this.s.dynamicEl[b].subHtmlUrl ? c = this.s.dynamicEl[b].subHtmlUrl : e = this.s.dynamicEl[b].subHtml : (d = this.$items.eq(b), d.attr("data-sub-html-url") ? c = d.attr("data-sub-html-url") : (e = d.attr("data-sub-html"), this.s.getCaptionFromTitleOrAlt && !e && (e = d.attr("title") || d.find("img").first().attr("alt")))), !c)
@@ -391,7 +391,7 @@ function (a, b) {
                   })
             }, c.prototype.controls = function () {
                   var b = this;
-                  a(this.core.s.appendAutoplayControlsTo).append('<span class="lg-autoplay-button lg-icon"></span>'), b.core.$outer.find(".lg-autoplay-button").on("click.lg", function () {
+                  a(this.core.s.appendAutoplayControlsTo).append('<span class="lg-autoplay-button lg-icon" title="Autoplay Brochure"></span>'), b.core.$outer.find(".lg-autoplay-button").on("click.lg", function () {
                         a(b.core.$outer).hasClass("lg-show-autoplay") ? (b.cancelAuto(), b.core.s.fourceAutoplay = !1) : b.interval || (b.startlAuto(), b.core.s.fourceAutoplay = b.fourceAutoplayTemp)
                   })
             }, c.prototype.startlAuto = function () {
@@ -427,7 +427,7 @@ function (a, b) {
                   var a = "";
                   if (this.core.s.fullScreen) {
                         if (!(document.fullscreenEnabled || document.webkitFullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled)) return;
-                        a = '<span class="lg-fullscreen lg-icon"></span>', this.core.$outer.find(".lg-toolbar").append(a), this.fullScreen()
+                        a = '<span class="lg-fullscreen lg-icon" title="View Full Screen"></span>', this.core.$outer.find(".lg-toolbar").append(a), this.fullScreen()
                   }
             }, d.prototype.requestFullscreen = function () {
                   var a = document.documentElement;
@@ -619,7 +619,7 @@ function (a, b) {
                   })
             }, c.prototype.toogle = function () {
                   var a = this;
-                  a.core.s.toogleThumb && (a.core.$outer.addClass("lg-can-toggle"), a.$thumbOuter.append('<span class="lg-toogle-thumb lg-icon"></span>'), a.core.$outer.find(".lg-toogle-thumb").on("click.lg", function () {
+                  a.core.s.toogleThumb && (a.core.$outer.addClass("lg-can-toggle"), a.$thumbOuter.append('<span class="lg-toogle-thumb lg-icon" title="Click to Toggle Thumbnails"></span>'), a.core.$outer.find(".lg-toogle-thumb").on("click.lg", function () {
                         a.core.$outer.toggleClass("lg-thumb-open")
                   }))
             }, c.prototype.thumbkeyPress = function () {
@@ -794,8 +794,8 @@ function (a, b) {
                   };
             d.prototype.init = function () {
                   var b = this,
-                        c = '<span id="lg-zoom-in" class="lg-icon"></span><span id="lg-zoom-out" class="lg-icon"></span>';
-                  b.core.s.actualSize && (c += '<span id="lg-actual-size" class="lg-icon"></span>'), b.core.s.useLeftForZoom ? b.core.$outer.addClass("lg-use-left-for-zoom") : b.core.$outer.addClass("lg-use-transition-for-zoom"), this.core.$outer.find(".lg-toolbar").append(c), b.core.$el.on("onSlideItemLoad.lg.tm.zoom", function (c, d, e) {
+                        c = '<span id="lg-zoom-in" title="Zoom In" class="lg-icon"></span><span id="lg-zoom-out" title="Zoom Out" class="lg-icon"></span>';
+                  b.core.s.actualSize && (c += '<span id="lg-actual-size" title="View Current Page Actual Size" class="lg-icon"></span>'), b.core.s.useLeftForZoom ? b.core.$outer.addClass("lg-use-left-for-zoom") : b.core.$outer.addClass("lg-use-transition-for-zoom"), this.core.$outer.find(".lg-toolbar").append(c), b.core.$el.on("onSlideItemLoad.lg.tm.zoom", function (c, d, e) {
                         var f = b.core.s.enableZoomAfter + e;
                         a("body").hasClass("lg-from-hash") && e ? f = 0 : a("body").removeClass("lg-from-hash"), b.zoomabletimeout = setTimeout(function () {
                               b.core.$slide.eq(d).addClass("lg-zoomable")
@@ -980,7 +980,7 @@ function (a, b) {
                   };
             c.prototype.init = function () {
                   var b = this,
-                        c = '<span id="lg-share" class="lg-icon"><ul class="lg-dropdown" style="position: absolute;">';
+                        c = '<span id="lg-share" title="Click to view Menu" class="lg-icon"><ul class="lg-dropdown" style="position: absolute;">';
                   
                   c += b.core.s.theDifference ? '<li><a id="lg-jump-caldera-difference"><span class="lg-icon"></span><span class="lg-dropdown-text">' + this.core.s.theCalderaDifferenceText + "</span></a></li>" : "", 
                   
