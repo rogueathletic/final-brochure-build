@@ -444,7 +444,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       box-shadow: 2px 2px 15px -10px #999, -1px -1px 25px -10px #999;
 }
 
-.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:not(:focus):active,
 .lg-outer .lg-thumb-item:hover {
       border-color: var(--brand-primary-color);
       padding: 5px;
@@ -1349,7 +1349,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 @media only screen and (max-width: 1366px) and (hover: none) {
-      .lg-fullscreen,
+      .lg-autoplay-button
       #lg-actual-size,
       .lg-outer .lg-pager-outer {
             display: none;
