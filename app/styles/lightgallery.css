@@ -13,7 +13,7 @@ lightgallery - v1.6.14 - 2020-04-21
       /* var(--brochure-white) */
       --brochure-black: #000000;
       /* var(--brochure-black) */
-      --ninety-percent-white: #00000090;
+      --ninety-percent-white: rgba(255, 255, 255, 0.9);
       /* var(--ninety-percent-white) */
       --seventy-percent-black: #00000070;
       /* var(--seventy-percent-black) */
@@ -846,16 +846,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-dropdown {
-      background-color: transparent;
+      background-color: var(--fourty-percent-black);
       position: absolute;
       border-radius: 2px;
       font-size: 14px;
       list-style-type: none;
       margin: 0;
-      padding: 0 15px;
+      padding: 15px;
       right: 0;
       text-align: left;
-      top: 47px;
+      top: 49px;
       opacity: 0;
       visibility: hidden;
       -moz-transform: translate3d(0, 5px, 0);
@@ -926,7 +926,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer .lg-dropdown a:hover,
 .lg-outer .lg-dropdown a:active {
       color: var(--brand-primary-color) !important;
-      background-color: var(--seventy-percent-white);
+      background-color: var(--ninety-percent-white);
       border-radius: 50px;
       position: relative;
       -webkit-border-radius: 50px;
@@ -962,6 +962,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-outer #lg-share {
       position: relative;
+      top: -2px;
 }
 
 .lg-outer #lg-share:after {
