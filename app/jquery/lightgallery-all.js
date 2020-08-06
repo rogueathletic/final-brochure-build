@@ -31,7 +31,7 @@
                   addClass: "",
                   startClass: "lg-start-zoom",
                   backdropDuration: 150,
-                  hideBarsDelay: 2222,
+                  hideBarsDelay: 4000,
                   useLeft: !1,
                   closable: !1,
                   loop: !0,
@@ -795,7 +795,7 @@ function (a, b) {
             d.prototype.init = function () {
                   var b = this,
                         c = '<span id="lg-zoom-in" title="Zoom In" class="lg-icon"></span><span id="lg-zoom-out" title="Zoom Out" class="lg-icon"></span>';
-                  b.core.s.actualSize && (c += '<span id="lg-actual-size" title="View Current Page Actual Size" class="lg-icon"></span>'), b.core.s.useLeftForZoom ? b.core.$outer.addClass("lg-use-left-for-zoom") : b.core.$outer.addClass("lg-use-transition-for-zoom"), this.core.$outer.find(".lg-toolbar").append(c), b.core.$el.on("onSlideItemLoad.lg.tm.zoom", function (c, d, e) {
+                  b.core.s.actualSize && (c += '<span id="lg-actual-size" title="View Full Size" class="lg-icon"></span>'), b.core.s.useLeftForZoom ? b.core.$outer.addClass("lg-use-left-for-zoom") : b.core.$outer.addClass("lg-use-transition-for-zoom"), this.core.$outer.find(".lg-toolbar").append(c), b.core.$el.on("onSlideItemLoad.lg.tm.zoom", function (c, d, e) {
                         var f = b.core.s.enableZoomAfter + e;
                         a("body").hasClass("lg-from-hash") && e ? f = 0 : a("body").removeClass("lg-from-hash"), b.zoomabletimeout = setTimeout(function () {
                               b.core.$slide.eq(d).addClass("lg-zoomable")
