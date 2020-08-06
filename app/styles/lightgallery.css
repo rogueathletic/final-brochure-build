@@ -1342,6 +1342,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       }
 }
 
+@media only screen and (max-width: 1024px) {
+      .lg-outer .lg-pager-outer {
+            display: none;
+            }
+}
+
 @media only screen and (max-width: 1366px) and (hover: none) {
       .lg-fullscreen,
       #lg-actual-size,
