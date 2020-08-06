@@ -1335,9 +1335,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       }
 } */
 
-@media only screen and (prefers-color-scheme: light) {
+@media only screen and (prefers-color-scheme: light) and (prefers-color-scheme: dark) {
       .lg-outer {
-            background-color: var(--brochure-white);
+            background-color: var(--brochure-white)!important;
       }
 }
 
