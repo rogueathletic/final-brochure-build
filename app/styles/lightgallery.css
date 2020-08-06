@@ -844,15 +844,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer.lg-dropdown-active #lg-share {
-      color: var(--fourty-percent-black);
+      color: var(--brand-primary-color);
 }
 
 .lg-dropdown-active .lg-toolbar {
-      background-color: var(--brand-primary-color);
+      background-color: var(--seventy-percent-black);
 }
 
 .lg-outer .lg-dropdown {
-      background-color: var(--brand-primary-color);
+      background-color: var(--seventy-percent-black);
       position: absolute;
       border-radius: 0 0 0 25px;
       font-size: 14px;
@@ -1351,14 +1351,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       }
 }
 
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
       .lg-outer .lg-pager-outer {
             display: none;
             }
-}
+} */
 
 @media only screen and (max-width: 1366px) and (hover: none) {
-      .lg-autoplay-button
+      .lg-autoplay-button,
       #lg-actual-size,
       .lg-outer .lg-pager-outer {
             display: none;
