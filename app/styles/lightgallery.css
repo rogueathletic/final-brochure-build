@@ -1278,7 +1278,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 
-@media screen and (prefers-reduced-transparency: reduce) and (prefers-contrast: high) and (prefers-contrast: forced) and (-ms-high-contrast: active) {
+@media only screen and (prefers-reduced-transparency: reduce) and (prefers-contrast: high) and (prefers-contrast: forced) and (-ms-high-contrast: active) {
 
       /* replaces all colors with transparency with solid colors  only colors changed added */
       * {
@@ -1291,7 +1291,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       }
 }
 
-@media screen and (-ms-high-contrast: black-on-white) {
+@media only screen and (-ms-high-contrast: black-on-white) {
 
       /* Replaces #f26e4b; for black  and converts all transparency to solid colors only colors with changes added */
       * {
@@ -1311,7 +1311,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       }
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media only screen and (prefers-reduced-motion: reduce) {
       * {
             transition: 0s !important;
             transition-duration: 0s !important;
@@ -1320,19 +1320,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       }
 }
 
-@media screen and (prefers-color-scheme: dark) {
+@media only screen and (prefers-color-scheme: dark) {
       .lg-outer {
             background-color: #00000090;
       }
 }
 
-@media screen and (prefers-color-scheme: light) {
+@media only screen and (prefers-color-scheme: light) {
       .lg-outer {
             background-color: var(--brochure-white);
       }
 }
 
-@media (min-width: 1025px) {
+@media only screen and (min-width: 1025px) {
       .lg-outer .lg-thumb-item {
             -webkit-transition: border-color 0.25s ease;
             -o-transition: border-color 0.25s ease;
@@ -1342,7 +1342,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       }
 }
 
-@media screen and (max-width: 1366px) and (hover: none) {
+@media only screen and (max-width: 1366px) and (hover: none) {
       .lg-fullscreen,
       #lg-actual-size,
       .lg-outer .lg-pager-outer {
