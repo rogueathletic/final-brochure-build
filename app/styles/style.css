@@ -102,7 +102,7 @@ body {
   }
 
 .caldera-gallery > ul > li a {
-  border: 2px solid var(--brochure-white);
+  /* border: 2px solid var(--brochure-white); */
   padding: 0px;
   border-radius: 0px;
   display: block;

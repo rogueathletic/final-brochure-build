@@ -31,7 +31,7 @@
                   addClass: "",
                   startClass: "lg-start-zoom",
                   backdropDuration: 150,
-                  hideBarsDelay: 6666,
+                  hideBarsDelay: 666666,
                   useLeft: !1,
                   closable: !1,
                   loop: !0,
@@ -104,7 +104,7 @@
                         f = "",
                         g = this;
                   for (a("body").append('<div class="lg-backdrop"></div>'), a(".lg-backdrop").css("transition-duration", this.s.backdropDuration + "ms"), e = 0; e < this.$items.length; e++) c += '<div class="lg-item"></div>';
-                  if (this.s.controls && this.$items.length > 1 && (d = '<div class="lg-actions"><button title="View Previous Page" class="lg-prev lg-icon">' + this.s.prevHtml + '</button><button title="View Next Page" class="lg-next lg-icon">' + this.s.nextHtml + "</button></div>"), ".lg-sub-html" === this.s.appendSubHtmlTo && (f = '<div class="lg-sub-html"></div>'), b = '<div class="lg-outer ' + this.s.addClass + " " + this.s.startClass + '"><div class="lg" style="width:' + this.s.width + "; height:" + this.s.height + '"><div class="lg-inner">' + c + '</div><div class="lg-toolbar lg-group"><a  href="https://calderaspas.com/caldera-brochure/" target="_blank" download><span class="lg-pdf lg-icon" title="Click to Download"></span></a></div>' + d + f + "</div></div>", a("body").append(b), this.$outer = a(".lg-outer"), this.$slide = this.$outer.find(".lg-item"), this.s.useLeft ? (this.$outer.addClass("lg-use-left"), this.s.mode = "lg-slide") : this.$outer.addClass("lg-use-css3"), g.setTop(), a(window).on("resize.lg orientationchange.lg", function () {
+                  if (this.s.controls && this.$items.length > 1 && (d = '<div class="lg-actions"><button title="View Previous Page" class="lg-prev lg-icon">' + this.s.prevHtml + '</button><button title="View Next Page" class="lg-next lg-icon">' + this.s.nextHtml + "</button></div>"), ".lg-sub-html" === this.s.appendSubHtmlTo && (f = '<div class="lg-sub-html"></div>'), b = '<div class="lg-outer ' + this.s.addClass + " " + this.s.startClass + '"><div class="lg" style="width:' + this.s.width + "; height:" + this.s.height + '"><div class="lg-inner">' + c + '</div><a href="https://calderaspas.com" target="_blank" class="lg-icon " id="lg-link-home">&nbsp;</a><div class="lg-toolbar lg-group"><a  href="https://calderaspas.com/caldera-brochure/" target="_blank" download><span class="lg-pdf lg-icon" title="Click to Download"></span></a></div>' + d + f + "</div></div>", a("body").append(b), this.$outer = a(".lg-outer"), this.$slide = this.$outer.find(".lg-item"), this.s.useLeft ? (this.$outer.addClass("lg-use-left"), this.s.mode = "lg-slide") : this.$outer.addClass("lg-use-css3"), g.setTop(), a(window).on("resize.lg orientationchange.lg", function () {
                               setTimeout(function () {
                                     g.setTop()
                               }, 100)
