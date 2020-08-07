@@ -36,6 +36,46 @@ lightgallery - v1.6.14 - 2020-04-21
       font-style: normal;
 }
 
+@font-face {
+      font-family:"magdelin";
+      src: url("app/fonts/magdelin/Adam Ladd - Magdelin light.otf");
+      font-weight: normal;
+      font-style: normal;
+}
+
+.st0,
+.st1,
+.st2,
+.st3,
+.st4,
+.st5,
+.st6,
+.st7,
+.st8,
+.st9,
+.st1,
+.st1,
+.st1,
+.st1,
+.st1,
+.st1,
+.st1,
+.st1,
+.st1,
+.st1,
+.st2,
+.st2,
+.st2,
+.st2,
+.st2,
+.st2,
+svg,
+p,
+span:not(::after) {
+      font-family: "magdelin", 'sans-serif'!important;
+}
+
+
 .lg-icon {
       font-family: 'lg';
       /* speak: none; */
@@ -330,6 +370,7 @@ lightgallery - v1.6.14 - 2020-04-21
       vertical-align: middle;
       position: relative;
       left: 40px;
+      font-family: "magdelin", 'sans-serif'!important;
 }
 
 
@@ -544,7 +585,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       font-size: 16px;
       font-variant: small-caps;
       letter-spacing: 1px;
-      font-family: sans-serif;
+      font-family: "magdelin", 'sans-serif';
       height: 30px;
       line-height: 27px;
       padding: 2px 5px 10px;
@@ -1128,7 +1169,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       display: block;
       white-space: pre;
       padding: 4px 12px;
-      font-family:museosans-300, 'sans-serif';
+      font-family: "magdelin", 'sans-serif';
       font-size: 12px;
 }
 
