@@ -22,7 +22,7 @@
                   return this.modules = {}, this.lGalleryOn = !1, this.lgBusy = !1, this.hideBartimeout = !1, this.isTouch = "ontouchstart" in document.documentElement, this.s.slideEndAnimatoin && (this.s.hideControlOnEnd = !1), this.s.dynamic ? this.$items = this.s.dynamicEl : "this" === this.s.selector ? this.$items = this.$el : "" !== this.s.selector ? this.s.selectWithin ? this.$items = a(this.s.selectWithin).find(this.s.selector) : this.$items = this.$el.find(a(this.s.selector)) : this.$items = this.$el.children(), this.$slide = "", this.$outer = "", this.init(), this
             }
             var c = {
-                  mode: "lg-slide",
+                  mode: "lg-fade",
                   cssEasing: "ease",
                   easing: "linear",
                   speed: 600,
@@ -31,7 +31,7 @@
                   addClass: "",
                   startClass: "lg-start-zoom",
                   backdropDuration: 150,
-                  hideBarsDelay: 666666,
+                  hideBarsDelay:6000,
                   useLeft: !1,
                   closable: !1,
                   loop: !0,
