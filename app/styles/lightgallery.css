@@ -72,7 +72,7 @@ lightgallery - v1.6.14 - 2020-04-21
 svg,
 p,
 span:not(::after) {
-      font-family: "magdelin", 'sans-serif'!important;
+      font-family:  'sans-serif'!important;
 }
 
 
@@ -370,7 +370,7 @@ span:not(::after) {
       vertical-align: middle;
       position: relative;
       left: 40px;
-      font-family: "magdelin", 'sans-serif'!important;
+      font-family:  'sans-serif'!important;
 }
 
 
@@ -585,7 +585,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       font-size: 16px;
       font-variant: small-caps;
       letter-spacing: 1px;
-      font-family: "magdelin", 'sans-serif';
+      font-family:  'sans-serif'!important;
       height: 30px;
       line-height: 27px;
       padding: 2px 5px 10px;
