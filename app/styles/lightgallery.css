@@ -487,6 +487,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       overflow: hidden;
       height: 100%;
       border: 2px solid var(--brochure-white);
+      background-color:var(--brochure-white);
       border-radius: 0;
       margin-bottom: 5px;
       -webkit-border-radius: 0;
@@ -581,6 +582,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       padding-bottom: 56.25%;
       overflow: hidden;
       position: relative;
+}
+
+.lg-image {
+      background-color: var(--brochure-white);
 }
 
 .lg-outer .lg-video .lg-object {
