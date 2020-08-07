@@ -3,30 +3,31 @@ lightgallery - v1.6.14 - 2020-04-21
 * http://sachinchoolur.github.io/lightGallery/
 * Copyright (c) 2020 Sachin N; Licensed GPLv3 */
 
-/*  TODO:  */
 
 
-:root {
-      --brand-primary-color: #f57b56;
-      /* var(--brand-primary-color) */
-      --brochure-white: #ffffff;
-      /* var(--brochure-white) */
-      --brochure-black: #000000;
-      /* var(--brochure-black) */
-      --ninety-percent-white: rgba(255, 255, 255, 0.9);
-      /* var(--ninety-percent-white) */
-      --ninety-percent-black: rgba(0, 0, 0, 0.9);
-      /* var(--ninety-percent-white) */
-      --seventy-percent-black: rgba(0, 0, 0, 0.7);
-      /* var(--seventy-percent-black) */
-      --fourty-percent-black: rgba(0, 0, 0, 0.4);
-      /* var(--fourty-percent-black) */
-      --seventy-percent-white: rgba(255, 255, 255, 0.7);
-      /* var(--seventy-percent-white) */
-      --trans-color: rgba(0, 0, 0, 0);
-      /* var(--trans-color) */
-      --logo-shadow: rgba(0, 0, 0, 0.2);
-}
+
+
+/*  TODO:
+
+all color values on stylesheet
+rgba(255, 255, 255, 0.9);
+rgba(255, 255, 255, 0.7);
+rgba(0, 0, 0, 0.9);
+rgba(0, 0, 0, 0.7);
+rgba(0, 0, 0, 0.4);
+rgba(0, 0, 0, 0);
+rgba(0, 0, 0, 0.2);
+transparent;
+#ffffff;
+#000000;
+#f57b56
+*/
+* {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+
 
 @font-face {
       font-family: 'lg';
@@ -92,10 +93,10 @@ span:not(::after) {
 
 .lg-actions .lg-next,
 .lg-actions .lg-prev {
-      background-color: var(--seventy-percent-white);
+      background-color:rgba(255, 255, 255, 0.7);;
       border-radius: 50%;
-      box-shadow: 0 0 15px -7px var(--brochure-black);
-      color: var(--brand-primary-color) !important;
+      box-shadow: 0 0 15px -7px #000000;
+      color: #f57b56 !important;
       cursor: pointer;
       display: block;
       font-size: 22px;
@@ -119,11 +120,11 @@ span:not(::after) {
 
 .lg-actions .lg-next:hover,
 .lg-actions .lg-prev:hover {
-      background-color: var(--brochure-white);
+      background-color: #ffffff;
       transition: box-shadow 222ms ease;
       border-radius: 50%;
-      box-shadow: 0 0 15px -7px var(--brand-primary-color);
-      color: var(--brand-primary-color) !important;
+      box-shadow: 0 0 15px -7px #f57b56;
+      color: #f57b56 !important;
       -webkit-transition: box-shadow 222ms ease;
       -moz-transition: box-shadow 222ms ease;
       -ms-transition: box-shadow 222ms ease;
@@ -132,11 +133,11 @@ span:not(::after) {
 
 .lg-actions .lg-next:active,
 .lg-actions .lg-prev:active {
-      background-color: var(--brochure-white);
+      background-color: #ffffff;
       transition: box-shadow 111ms ease;
       border-radius: 50%;
-      box-shadow: 0 0 var(--brochure-black);
-      color: var(--brand-primary-color) !important;
+      box-shadow: 0 0 #000000;
+      color: #f57b56 !important;
       -webkit-transition: box-shadow 111ms ease;
       -moz-transition: box-shadow 111ms ease;
       -ms-transition: box-shadow 111ms ease;
@@ -151,7 +152,7 @@ span:not(::after) {
 
 .lg-actions .lg-next:hover,
 .lg-actions .lg-prev:hover {
-      color: var(--brochure-white);
+      color: #ffffff;
 }
 
 .lg-actions .lg-next {
@@ -305,11 +306,11 @@ span:not(::after) {
       position: absolute;
       top: 0;
       width: 100%;
-      background-color: var(--fourty-percent-black);
+      background-color: rgba(0, 0, 0, 0.4);
 }
 
 .lg-toolbar .lg-icon {
-      color: var(--brochure-white);
+      color: #ffffff;
       cursor: pointer;
       float: right;
       font-size: 24px;
@@ -326,7 +327,7 @@ span:not(::after) {
 }
 
 .lg-toolbar .lg-icon:hover {
-      color: var(--brand-primary-color);
+      color: #f57b56;
 }
 
 .lg-toolbar .lg-close:after {
@@ -340,9 +341,9 @@ span:not(::after) {
 
 /* not shown ignore but leave for now */
 .lg-sub-html {
-      background-color: var(--trans-color);
+      background-color: transparent;
       bottom: 0;
-      color: var(--brochure-white);
+      color: #ffffff;
       font-size: 16px;
       left: 0;
       padding: 10px 40px;
@@ -364,7 +365,7 @@ span:not(::after) {
 }
 
 #lg-counter {
-      color: var(--brochure-white);
+      color: #ffffff;
       display: inline-block;
       font-size: 16px;
       padding: 12px 20px 0 20px;
@@ -394,8 +395,8 @@ span:not(::after) {
       -o-background-size: contain;
       background-size: contain;
       text-decoration: none;
-      filter: drop-shadow(0 0 5px var(--logo-shadow));
-      -webkit-filter: drop-shadow(0 0 5px var(--logo-shadow));
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+      -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
 
 #lg-link-home:hover {
@@ -417,13 +418,13 @@ span:not(::after) {
       -o-background-size: contain;
       background-size: contain;
       text-decoration: none;
-      filter: drop-shadow(0 0 5px var(--logo-shadow));
-      -webkit-filter: drop-shadow(0 0 5px var(--logo-shadow));
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+      -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
 
 #lg-counter:hover,
 #lg-counter:active {
-      /* color: var(--brand-primary-color); */
+      /* color: #f57b56; */
       cursor: default;
 }
 
@@ -481,7 +482,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-thumb-outer {
-      background-color: var(--seventy-percent-black);
+      background-color: rgba(0, 0, 0, 0.7);
       bottom: 0;
       position: absolute;
       width: 100%;
@@ -533,27 +534,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       float: left;
       overflow: hidden;
       height: 100%;
-      border: 2px solid var(--brochure-white);
-      background-color:var(--brochure-white);
+      border: 2px solid #ffffff;
+      background-color:#ffffff;
       border-radius: 0;
       margin-bottom: 5px;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       -ms-border-radius: 0;
       -o-border-radius: 0;
-      box-shadow: 2px 2px 15px -10px #999, -1px -1px 25px -10px #999;
+
 }
 
 
 .lg-outer .lg-thumb-item:hover,
 .lg-outer .lg-thumb-item:active {
-      border-color: var(--brand-primary-color);
+      border-color: #f57b56;
 
       padding: 2px;
 }
 
 .lg-outer .lg-thumb-item.active {
-      border-color: var(--brand-primary-color);
+      border-color: #f57b56;
       padding: 5px;
 }
 
@@ -584,9 +585,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-toogle-thumb {
-      background-color: var(--seventy-percent-black);
+      background-color: rgba(0, 0, 0, 0.7);
       border-radius: 15px 15px 0 0;
-      color: var(--brochure-white);
+      color: #ffffff;
       cursor: pointer;
       font-size: 16px;
       font-variant: small-caps;
@@ -616,7 +617,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-toogle-thumb:hover {
-      color: var(--brand-primary-color);
+      color: #f57b56;
 }
 
 .lg-outer .lg-video-cont {
@@ -637,7 +638,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-image {
-      background-color: var(--brochure-white);
+      background-color: #ffffff;
 }
 
 .lg-outer .lg-video .lg-object {
@@ -667,15 +668,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-has-vimeo .lg-video-play {
-      background: url("https://calderaspas.com/wp-content/uploads/2020/07/vimeo-play.png") no-repeat scroll 0 0 var(--trans-color);
+      background: url("https://calderaspas.com/wp-content/uploads/2020/07/vimeo-play.png") no-repeat scroll 0 0 transparent;
 }
 
 .lg-outer .lg-has-vimeo:hover .lg-video-play {
-      background: url("https://calderaspas.com/wp-content/uploads/2020/07vimeo-play.png") no-repeat scroll 0 -58px var(--trans-color);
+      background: url("https://calderaspas.com/wp-content/uploads/2020/07vimeo-play.png") no-repeat scroll 0 -58px transparent;
 }
 
 .lg-outer .lg-has-html5 .lg-video-play {
-      background: var(--trans-color) url("https://calderaspas.com/wp-content/uploads/2020/07/video-play.png") no-repeat scroll 0 0;
+      background: transparent url("https://calderaspas.com/wp-content/uploads/2020/07/video-play.png") no-repeat scroll 0 0;
       height: 64px;
       margin-left: -32px;
       margin-top: -32px;
@@ -688,11 +689,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-has-youtube .lg-video-play {
-      background: url("https://calderaspas.com/wp-content/uploads/2020/07/youtube-play.png") no-repeat scroll 0 0 var(--trans-color);
+      background: url("https://calderaspas.com/wp-content/uploads/2020/07/youtube-play.png") no-repeat scroll 0 0 transparent;
 }
 
 .lg-outer .lg-has-youtube:hover .lg-video-play {
-      background: url("https://calderaspas.com/wp-content/uploads/2020/07/youtube-play.png") no-repeat scroll 0 -60px var(--trans-color);
+      background: url("https://calderaspas.com/wp-content/uploads/2020/07/youtube-play.png") no-repeat scroll 0 -60px transparent;
 }
 
 .lg-outer .lg-video-object {
@@ -717,7 +718,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-progress-bar {
-      background-color: var(--seventy-percent-black);
+      background-color: rgba(0, 0, 0, 0.7);
       height: 5px;
       left: 0;
       position: absolute;
@@ -732,7 +733,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-progress-bar .lg-progress {
-      background-color: var(--brand-primary-color);
+      background-color: #f57b56;
       height: 5px;
       width: 0;
 }
@@ -845,7 +846,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       position: relative;
       vertical-align: top;
       margin: 0 5px;
-      box-shadow: 0 0 10px -4px var(--brochure-black);
+      box-shadow: 0 0 10px -4px #000000;
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -860,12 +861,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-pager-cont.lg-pager-active .lg-pager {
-      box-shadow: 0 0 0 2px var(--brochure-white) inset;
+      box-shadow: 0 0 0 2px #ffffff inset;
 }
 
 .lg-outer .lg-pager-thumb-cont {
-      background-color: var(--fourty-percent-black);
-      color: var(--brochure-white);
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #ffffff;
       bottom: 100%;
       height: 83px;
       left: 0;
@@ -884,15 +885,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       transform: translate3d(0, 5px, 0);
 }
 
+.lg-outer .lg-pager-thumb-cont  img {
+      background-color: #ffffff!important;
+}
+
+
 .lg-outer .lg-pager-thumb-cont img {
       width: 100%;
       height: 100%;
 }
 
 .lg-outer .lg-pager {
-      background-color: var(--seventy-percent-white);
+      background-color: rgba(255, 255, 255, 0.7);
       border-radius: 50%;
-      box-shadow: 0 0 0 1px var(-brochure-white) inset;
+      box-shadow: 0 0 0 1px #ffffff inset;
       display: block;
       height: 12px;
       -webkit-transition: box-shadow 0.3s ease 0s;
@@ -904,12 +910,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer .lg-pager:hover,
 .lg-outer .lg-pager:active,
 .lg-outer .lg-pager-active {
-      box-shadow: 0 0 0 8px var(--brand-primary-color) inset;
+      box-shadow: 0 0 0 8px #f57b56 inset;
 }
 
 .lg-outer .lg-caret {
-      border-left: 10px solid var(--trans-color);
-      border-right: 10px solid var(--trans-color);
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
       border-top: 10px dashed;
       bottom: -10px;
       display: inline-block;
@@ -919,7 +925,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       position: absolute;
       vertical-align: middle;
       width: 0;
-      color: var(--fourty-percent-black);
+      color: rgba(0, 0, 0, 0.4);
 }
 
 .lg-fullscreen:after {
@@ -931,7 +937,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer #lg-dropdown-overlay {
-      background-color: var(--fourty-percent-black);
+      background-color: rgba(0, 0, 0, 0.4);
       bottom: 0;
       cursor: default;
       left: 0;
@@ -944,6 +950,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       -webkit-transition: visibility 0s linear 0.18s, opacity 0.18s linear 0s;
       -o-transition: visibility 0s linear 0.18s, opacity 0.18s linear 0s;
       transition: visibility 0s linear 0.18s, opacity 0.18s linear 0s;
+}
+
+.lg-dropdown-active  {
+      transition-duration: 333ms ease;
 }
 
 .lg-outer.lg-dropdown-active .lg-dropdown,
@@ -960,15 +970,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer.lg-dropdown-active #lg-share {
-      color: var(--brand-primary-color);
+      color: #f57b56;
 }
 
 .lg-dropdown-active .lg-toolbar {
-      background-color: var(--seventy-percent-black);
+      background-color: rgba(0, 0, 0, 0.7);
 }
 
 .lg-outer .lg-dropdown {
-      background-color: var(--trans-color);
+      background-color: transparent;
       position: absolute;
       border-radius: 0 0 0 25px;
       font-size: 14px;
@@ -1122,14 +1132,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @keyframes bringInMenu {
       0% {
             top: 30px;
-            background-color: var(--trans-color);
+            background-color: transparent;
       }
 
 
       100% {
             top: 49px;
             right: 0;
-            background-color: var(--seventy-percent-black);
+            background-color: rgba(0, 0, 0, 0.7);
       }
 
 }
@@ -1172,11 +1182,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-outer .lg-dropdown>li:hover a,
 .lg-outer .lg-dropdown>li:hover .lg-icon {
-      color: var(--seventy-percent-black);
+      color: rgba(0, 0, 0, 0.7);
 }
 
 .lg-outer .lg-dropdown a {
-      color: var(--brochure-white);
+      color: #ffffff;
       display: block;
       white-space: pre;
       padding: 4px 12px;
@@ -1186,8 +1196,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-outer .lg-dropdown a:hover,
 .lg-outer .lg-dropdown a:active {
-      color: var(--brand-primary-color) !important;
-      background-color: var(--ninety-percent-white);
+      color: #f57b56 !important;
+      background-color: #ffffff;
       border-radius: 50px;
       position: relative;
       -webkit-border-radius: 50px;
@@ -1209,7 +1219,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 /* sets menu dropdown icon positioning */
 .lg-outer .lg-dropdown .lg-icon {
-      color: var(--seventy-percent-black);
+      color:rgba(0, 0, 0, 0.7);
       display: inline-block;
       float: none;
       font-size: 20px;
@@ -1230,38 +1240,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       content: "\2630";
 }
 
-/* 
-    .lg-outer #lg-jump-caldera-difference .lg-icon {
-      color: #3b5998;
-    }
-    .lg-outer #lg-jump-caldera-difference .lg-icon:after {
-      content: "\e901";
-    }
-    .lg-outer #lg-jump-perfect-fit .lg-icon {
-      color: #00aced;
-    }
-    .lg-outer #lg-jump-perfect-fit .lg-icon:after {
-      content: "\e904";
-    }
-    .lg-outer #lg-jump-detailed-specifications .lg-icon {
-      color: #dd4b39;
-    }
-    .lg-outer #lg-jump-detailed-specifications .lg-icon:after {
-      content: "\e902";
-    }
-    .lg-outer #lg-jump-essentials-and-accessories .lg-icon {
-      color: #cb2027;
-    }
-    .lg-outer #lg-jump-essentials-and-accessories .lg-icon:after {
-      content: "\e903";
-    }
-    
-    .lg-outer #lg-jump-warranty .lg-icon {
-      color: #cb2027;
-    }
-    .lg-outer #lg-jump-warranty .lg-icon:after {
-      content: "\e903";
-    } */
+
 
 .lg-group:after {
       content: "";
@@ -1270,7 +1249,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer {
-      background-color: var(--brochure-white);
+      background-color: #ffffff;
       width: 100%;
       height: 100%;
       position: fixed;
@@ -1349,7 +1328,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-item {
-      background: url("https://calderaspas.com/wp-content/uploads/2020/07/loading.gif") no-repeat scroll center center var(--trans-color);
+      background: url("https://calderaspas.com/wp-content/uploads/2020/07/loading.gif") no-repeat scroll center center transparent;
       display: none !important;
 }
 
@@ -1435,7 +1414,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       right: 0;
       bottom: 0;
       z-index: 1040;
-      background-color: var(--brochure-white);
+      background-color: #ffffff;
       opacity: 0;
       -webkit-transition: opacity 0.15s ease 0s;
       -o-transition: opacity 0.15s ease 0s;
@@ -1541,40 +1520,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
 }
 
-
-@media only screen and (prefers-reduced-transparency: reduce) and (prefers-contrast: high) and (prefers-contrast: forced) and (-ms-high-contrast: active) {
-
-      /* replaces all colors with transparency with solid colors  only colors changed added */
-      * {
-            --seventy-percent-black: rgba(0, 0, 0, 1);
-            /* var(--seventy-percent-black) */
-            --fourty-percent-black: rgba(0, 0, 0, 1);
-            /* var(--fourty-percent-black) */
-            --seventy-percent-white: rgba(255, 255, 255, 1);
-            /* var(--seventy-percent-white) */
-      }
-}
-
-@media only screen and (-ms-high-contrast: black-on-white) {
-
-      /* Replaces #f26e4b; for black  and converts all transparency to solid colors only colors with changes added */
-      * {
-            --brand-primary-color: #000000;
-            /* var(--brand-primary-color) */
-            --brochure-white: #ffffff;
-            /* var(--brochure-white) */
-            --brochure-black: #000000;
-            /* var(--brochure-black) */
-            --seventy-percent-black: rgba(0, 0, 0, 1);
-            /* var(--seventy-percent-black) */
-            --fourty-percent-black: rgba(0, 0, 0, 1);
-            /* var(--fourty-percent-black) */
-            --seventy-percent-white: rgba(255, 255, 255, 1);
-            /* var(--seventy-percent-white) */
-            --trans-color: var(--trans-color);
-      }
-}
-
 @media only screen and (prefers-reduced-motion: reduce) {
       * {
             transition: 0s !important;
@@ -1583,16 +1528,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
             scroll-behavior: auto !important;
       }
 }
-
-/* @media only screen and (prefers-color-scheme: dark) {
-      .lg-outer {
-            background-color: #00000090;
-      }
-} */
-
 @media only screen and (prefers-color-scheme: light) and (prefers-color-scheme: dark) {
       .lg-outer {
-            background-color: var(--brochure-white) !important;
+            background-color: #ffffff !important;
       }
 }
 
@@ -1605,12 +1543,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
             -ms-transition: border-color 0.25s ease;
       }
 }
-
-/* @media only screen and (max-width: 1024px) {
-      .lg-outer .lg-pager-outer {
-            display: none;
-            }
-} */
 
 @media only screen and (max-width: 1366px) and (hover: none) {
 
