@@ -576,6 +576,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-image {
     /* background: linear-gradient(90deg, white, #cbcbcb, white) */
     filter: drop-shadow(1px 1px 10px #aeaeae);
+    padding: 47px;
 }
 
 .lg-outer .lg-video .lg-object {
@@ -776,6 +777,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     overflow: visible
 }
 
+
 .lg-outer .lg-pager-cont {
     cursor: pointer;
     display: inline-block;
@@ -783,7 +785,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     position: relative;
     vertical-align: top;
     margin: 0 5px;
-    box-shadow: 0 0 10px -4px #000;
+    box-shadow: 0 0 10px -2px #000;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -798,7 +800,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-pager-cont.lg-pager-active .lg-pager {
-    box-shadow: 0 0 0 2px #fff inset
+    box-shadow: 0 0 0 8px #f57b56 inset;
+    border: 1px #f57b56 solid;
 }
 
 .lg-outer .lg-pager-thumb-cont {
