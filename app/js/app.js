@@ -73,8 +73,8 @@
                         thumb: "./app/image-assets/svg-layers/caldera-spas-hot-tub-brochure-2020-page7.svg",
                         src: "./app/image-assets/svg-layers/caldera-spas-hot-tub-brochure-2020-page7.svg"
                   }, {
-                        thumb: "./app/image-assets/svg-layers/caldera-spas-hot-tub-brochure-2020-page8.svg",
-                        src: "./app/image-assets/svg-layers/caldera-spas-hot-tub-brochure-2020-page8.svg"
+                        thumb: "./app/image-assets/svg-layers/page-8-test.svg",
+                        src: "./app/image-assets/svg-layers/page-8-test.svg"
                   }, {
                         thumb: "./app/image-assets/svg-layers/caldera-spas-hot-tub-brochure-2020-page9.svg",
                         src: "./app/image-assets/svg-layers/caldera-spas-hot-tub-brochure-2020-page9.svg"
