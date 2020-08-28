@@ -664,7 +664,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     left: 0
 }
 
-.lg-toolbar #getBrochure {
+.lg-toolbar .pdf {
     border: 0px solid transparent!important;
     background-color: transparent!important;
 }
