@@ -1,0 +1,17 @@
+
+<svg id="page" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612 792">
+	<filter id="logoShadow" x="-1" y="-1" width="500px" height="200px">
+		<feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="6" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+	</filter>
+
+	<filter id="textShadow" x="-1" y="-1" width="200px" height="200px">
+		<feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+	</filter>
+
+
+
+<g id="text" fill="#ffffff" filter="url(#textShadow)">
